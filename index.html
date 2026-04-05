@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Finance Tracker</title>
+</head>
+
+<body>
+    <div class="sidebar">
+        <button onclick="toggleDarkMode()">🌙 Dark Mode</button>
+        <h2>Finance Tracker</h2>
+        <ul>
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="add-expense.html">Add Expense</a></li>
+            <li><a href="expenses.html">View Expenses</a></li>
+            <button onclick="downloadCSV()">Download Expense Report</button>
+        </ul>
+    </div>
+
+
+    <div class="main">
+        <h1>Dashboard</h1>
+        <div class="card">
+            <h3>Total Expenses</h3>
+            <p id="totalExpense">0</p>
+        </div>
+
+
+        <div class="card">
+            <h3>Monthly Budget</h3>
+            <p id="monthlyBudget">₹0</p>
+            <input type="number" id="budgetInput" placeholder="Enter Monthly Budget">
+
+            <button onclick="saveBudget()">Save Budget</button>
+
+            <div class="progress-container">
+
+                <div id="budgetProgress"></div>
+
+            </div>
+
+            <p id="budgetPercent">0%</p>
+        </div>
+
+        <div class="card">
+            <h3>Total Income</h3>
+            <p id="totalIncome">₹0</p>
+            <input type="number" id="incomeInput" placeholder="Enter Income">
+
+            <button onclick="saveIncome()">Save Income</button>
+        </div>
+        <div class="card">
+            <h3>Remaining Balance</h3>
+            <p id="remainingBalance">₹0</p>
+        </div>
+
+    </div>
+
+    <div class="charts-wrapper">
+
+        <div class="chart-container">
+            <h2>Expense Chart</h2>
+            <canvas id="expenseChart"></canvas>
+        </div>
+
+
+        <div class="chart-container">
+            <h2>Monthly Expense Trend</h2>
+            <canvas id="monthlyChart"></canvas>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

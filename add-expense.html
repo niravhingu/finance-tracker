@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Add Expense</title>
+</head>
+
+<body>
+    <div class="main">
+        <h2>Add Expense</h2>
+        <form id="expenseForm">
+
+            <label>Expense Name</label>
+            <input type="text" id="name">
+
+            <label>Amount</label>
+            <input type="number" id="amount">
+
+            <label>Category</label>
+            <select id="category">
+                <option>Food</option>
+                <option>Travel</option>
+                <option>Shopping</option>
+                <option>Bills</option>
+            </select>
+
+            <label>Date</label>
+            <input type="date" id="date">
+
+            <button type="submit">Add Expense</button>
+
+        </form>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
