@@ -10,7 +10,6 @@ This project is built using basic web technologies and is designed with a clean 
 ---
 
 ## ✨ Features
-
 ✅ Add daily expenses  
 ✅ View all expenses in a list  
 ✅ Delete expenses  
@@ -50,14 +49,17 @@ finance-tracker/
 
 ## 📱 Screenshots
 
-### Dashboard
-![Dashboard Screenshot](images/dashboard.png)
+### Home Page / Dashboard
+![Dashboard Screenshot](4.png)
 
 ### Add Expense Page
-![Add Expense Screenshot](images/add-expense.png)
+![Add Expense Screenshot](3.png)
 
-### Expense Chart
-![Chart Screenshot](images/chart.png)
+### View Expense Page
+![filter Screenshot](finance-2.png)
+
+### Dark Mode Theme Chage 
+![Chart Screenshot](finance-tracker-1.png)
 
 > Note: Create an `images` folder and add screenshots there.
 
@@ -96,7 +98,8 @@ That’s it 🎉 — the application will run locally.
 - Expense categories
 - Dark mode
 - Monthly reports
-- Data backup feature
+- Data backup featur
+- ## For now, this is only capable of running on desktops, but a mobile-friendly interface will also be available soon.
 
 ---
 
